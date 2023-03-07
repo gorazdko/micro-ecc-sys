@@ -49,6 +49,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     builder.compile("micro-ecc-sys");
 
+/*
     let out_dir = PathBuf::from(env::var("OUT_DIR").unwrap());
 
     let bindings = bindgen::Builder::default()
@@ -66,6 +67,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     bindings
         .write_to_file(out_file)
         .expect("Couldn't write bindings!");
+*/
 
     Ok(())
 }
